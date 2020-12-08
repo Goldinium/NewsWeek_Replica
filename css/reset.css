@@ -6,32 +6,3 @@ body {
 .bg-red {
 	background-color: #f72210;
 }
-
-header {
-	font-family: "Roboto Condensed", sans-serif;
-}
-
-p {
-	margin-bottom: 0 !important;
-}
-
-.header-h1 {
-	color: white;
-	font-size: 65px;
-	font-family: 'Bevan', cursive;
-}
-
-.text-size {
-	font-size: 18px;
-}
-
-.text-color-a:hover {
-	color: #f72210;
-}
-
-.right-block a:hover,
-.text-absolut:hover,
-.hover-a:hover {
-	text-decoration: none;
-	color: red;
-}
