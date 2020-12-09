@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Replication of "The Next Web"
+# Replication of "NewsWeek"
 
 > A replication of the index webpage.
 
-![screenshot](./images/screenshot.jpg)
+![screenshot](./images/screenshot.png)
 
 ## Built With
 
@@ -40,4 +40,3 @@ Feel free to check the [issues page](https://github.com/Goldinium/NewsWeek_Repli
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
