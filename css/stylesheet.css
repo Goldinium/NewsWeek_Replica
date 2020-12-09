@@ -1,0 +1,19 @@
+.header-color {
+  background-color: #f72210;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-cat {
+  background-color: black;
+}
+
+.email_footer_radiant {
+  height: 250px;
+  width: 300px;
+  background-image: radial-gradient(circle at top right, yellow, #f06d06);
+}

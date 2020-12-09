@@ -1,94 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/reset.css">
-    <!--fonts -->
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a95e71060.js" crossorigin="anonymous"></script>
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
-
 <body>
-    <!-- Main body content start-->
-    <div class="container">
-
-        <!--Header section start -->
-        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-red d-flex justify-content-between">
-            <a class="header-a text-white text-decoration-none text-capitalize" href="#"> Tue, Dec 8, 2020</a>
-            <h1 class="header-h1">
-                Newsweek
-            </h1>
-            <div class="order-on-small-screen">
-                <a href="#" class="nw-btn text-white p-2 text-uppercase font-weight-bold">
-                    Sign in</a>
-                <a href="#" class="nw-btn-white p-2 text-danger text-uppercase bg-white font-weight-bold">
-                    Subscribe
+<div class="container-fluid container-xl container-lg ">
+      <div class="d-flex justify-content-between text-white header-color p-4">
+          <a href="#" class="text-white text-decoration-none font-weight-bold">
+              <div class="weather">
+                  <i class="fas fa-cloud-moon"></i>
+                  15° Tangier, MA <i class="fas fa-chevron-right"></i><br><br>
+                  Tue, Dec 08, 2020
+                </div></a>
+                <a href="#" class="text-white text-decoration-none">
+                    <h1 class="display-2">Newsweek</h1>
                 </a>
+                <span class="text-decoration-none"><a href="#" class="text-white">LOGIN</a></span>
+                <a href="#" class="btn subscribe rounded-pill">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
             </div>
-        </nav>
-
-        <main class="mx-auto">
-            <nav
-                class="border-bottom navbar navbar-expand-lg navbar-light bg-white bottom-nav mb-1 mt-lg-2 text-capitalize">
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="nav-li navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-between font-weight-bold">
-                        <li class="nav-item flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">u.S.</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">world</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">business</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">tech & science</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">culture</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">sports</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">health</a>
-                        </li>
-                        <li class="nav-item border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size mx-2" href="#">opinion</a>
-                        </li>
-                        <li class="nav-item d-flex border-left flex-grow-1">
-                            <a class="nav-link text-dark text-size" href="#">vantage</a>
-                            <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
-                                <input class="w-25 form-item mr-sm-1 border-0" type="text" placeholder="Search">
-                                <i class="fas fa-search"></i>
-                            </form>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-            <!-- Header section end-->
-        </main>
-
+            <nav class="nav-cat ">
+                <ul class="d-flex nav font-weight-bold justify-content-around align-items-center">
+                  <li class="nav-item">
+                    <a href="#">U.S.</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">World</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Tech & Science</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Culture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Newsgeek</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Health</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">The Debate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Vantage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Weather</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="input-group">
+                      <input type="text" class="form-control search"/>
+                      <div class="input-group-append">
+                        <i class="fas fa-search input-group-text"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="mt-2">
+                <ul class="nav">
+                  <li class="nav-item font-weight-bold mr-2 bg-warning">Trending</li>
+                  <li class="nav-item font-weight-bold mr-2"><a href="#" class="text-muted">JOE BIDEN</a></li>
+                  <li class="nav-item font-weight-bold mr-2"><a href="#" class="text-muted">DONALD TRUMP</a></li>
+                  <li class="nav-item font-weight-bold mr-2"><a href="#" class="text-muted">2020 Election</a></li>
+                  <li class="nav-item font-weight-bold mr-2"><a href="#" class="text-muted">CORONAVIRUS</a></li>
+                  <li class="nav-item font-weight-bold mr-2"><a href="#" class="text-muted">STIMULUS PACKAGE</a></li>
+                </ul>
+              </nav>
+<main>
+    <div class="my-3">
+        <div class="row">
+            <div class="col">
+                <div class="text-muted font-weight-bold">FEATURED STORY</div><br>
+                <article>
+                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
+                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
+                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
+                </article>
+                <article>
+                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
+                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
+                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
+                </article>
+                <article>
+                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
+                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
+                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
+                </article>
+                <article>
+                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
+                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
+                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
+                </article>
+                <article>
+                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
+                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
+                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
+                </article>
+            </div>
+    <div class="col">
+        <div class="text-muted font-weight-bold pb-2 mb-2">TOP STORY</div>
+        <article class="top-story border-bottom">
+          <div class="thumbnail">
+            <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+          </div>
+          <h4 class="font-weight-bold"><a href="#">Trump Lost the Election but the U.S.-China Relationship Is Forever Changed</a></h4>
+          <p>Four years of chaotic relations with President Donald Trump will soon be over, but a Biden Administration does not mean an end to the simmering U.S.-China confrontation.</p>
+        </article>
+        <section>
+          <div class="text-muted font-weight-bold text-uppercase my-1">My Turn</div>
+          <div class="row">
+            <div class="col">
+              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</a></p>
+            </div>
+            <div class="col">
+              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              <p class="text-muted font-weight-bold compact py-2"><a href="#">'My Baby Had a Medical Emergency During COVID'</a></p>
+            </div>
+            <div class="col">
+              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 12. Next Year I'm Studying Aerospace Engineering at University'</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="order-1 order-md-0">
+          <div class="text-muted font-weight-bold text-uppercase my-1 border-bottom">Culture & Travel</div>
+          <div class="row">
+            <div class="col">
+              <div class="thumbnail">
+                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              </div>
+              <p class="text-muted font-weight-bold py-2"><a href="#">Is Car Glamping the More Accessible Alternative to Van Life?</a></p>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              </div>
+              <p class="text-muted font-weight-bold py-2"><a href="#">These Countries Are the Most Dependent on Tourism</a></p>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+              </div>
+              <p class="text-muted font-weight-bold py-2"><a href="#">100 Best Rock Albums of All Time</a></p>
+            </div>
+          </div>
+        </section>
+        </div>
+    <div class="col font-weight-bold">
+        <section>
+          <div class="text-muted">OPINION</div>
+          <article>
+            <div class="row mt2">
+              <div>
+                <img src="images/john-yoo.webp" alt="image"/>
+              </div>
+                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a>
+                  By Rick & Morty
+            </div>
+          </article>
+          <article class="card border-top-0 border-left-0 border-right-0 py-2">
+            <div class="row mt2">
+              <div>
+                <img src="images/john-yoo.webp" alt="image"/>
+              </div>
+                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> By Rick & Morty
+            </div>
+          </article>
+          <article class="card border-top-0 border-left-0 border-right-0 py-2">
+            <div class="row mt2">
+              <div>
+                <img src="images/john-yoo.webp" alt="image"/>
+              </div>
+                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> By sleep deprived -_-
+            </div>
+          </article>
+          <article class="card border-top-0 border-left-0 border-right-0 py-2">
+            <div class="row mt2">
+              <div>
+                <img src="images/john-yoo.webp" alt="image"/>
+              </div>
+                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> By Rick & Morty
+            </div>
+          </article>
+          </section>
+          <div class="col mt-3">
+            <section>
+                <div class="text-muted font-weight-bold">MORE STORIES</div>
+                <article class="row border-bottom mb-3 media mt-3">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
+                  <div class="mx-2 media-body">
+                    <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
+                    <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+                  </div>
+                </article>
+                <article class="row border-bottom mb-3 media">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
+                  <div class="mx-2 media-body">
+                      <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
+                    <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+                  </div>
+                </article>
+                <article class="row border-bottom mb-3 media">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
+                  <div class="mx-2 media-body">
+                      <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
+                    <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+                  </div>
+                </article>
+                </section>
+          </div>
+          </div>
     </div>
-    <!-- Main body content end-->
-    <section>
-
-    </section>
-
+    </div>
+    <h2><span class="mt-5 font-weight-bold text-center">IN THE MAGAZINE</span></h2>
+    <div class="border-bottom mb-3 pb-3"></div>
+    <div class="row">
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/usa.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/usa.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/usa.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/selena.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/selena.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="thumbnail">
+                    <img class="w-100" src="images/selena.webp" alt="image"/>
+                  </div>
+                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+        </section>
+        </div>
+    </div>
+    <section class="border-top border-bottom py-2">
+        <div class="row">
+          <section class="col">
+            <header class="text-nw-red text-uppercase font-weight-bold">Subscribe <i class="fas fa-chevron-right"></i></header>
+            <div class="d-flex align-items-center bg-dark">
+              <img src="images/subscribe.jpg" alt="image"/>
+                <h3 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                <p>All Access + Weekly Delivery. Choose A membership That's Perfect for You!</p><br>
+                <a href="#" class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </section>
+          <section class="col">
+            <header class="font-weight-bold">Newsletter</header>
+            <div class="d-flex align-items-center bg-dark">
+              <div class="email_footer_radiant"></div>
+              <div class="mx-4">
+                <h3 class="font-weight-bold">The Starting 5</h3>
+                <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                <input type="text"  placeholder="Email address"/>
+                <div class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <footer class="m-3">
+        <section class="d-flex pb-3 border-bottom">
+            <h1 class="text-danger">Newsweek</h1>
+            <p style="font-size: 10px;">© 2020 Newsweek digital llc</p>
+        </section>
+        <nav class="my-2">
+          <ul class="nav">
+            <li>
+                <a href="#" class="text-wheight-bold border-right mr-2 pr-2 text-dark">Editions</a>
+              </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">U.S. Edition</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">日本</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Pakistan</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Polska</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">România</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="my-2">
+          <ul class="nav">
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Corrections</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Editorial Guidelines</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Advertise</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Copyright</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Cookie Policy</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Terms of Sale</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Archive</a>
+            </li>
+            <li>
+              <a href="#" class="border-right mr-2 pr-2 text-dark">Announcements</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+</main>
+</div>
 </body>
-
 </html>
