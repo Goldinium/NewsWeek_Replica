@@ -1,76 +1,43 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Replication of "The Next Web"
 
-> One paragraph statement about the project.
+> A replication of the index webpage.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+![screenshot](./images/screenshot.jpg)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML / CSS / Bootstrap
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+[Live Demo Link](https://goldinium.github.io/NewsWeek_Replica/)
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- Clone using SSH:
 
-### Setup
+git@github.com:Goldinium/The_Next_Web_replica.git
 
-### Install
+- Clone using HTTPS:
 
-### Usage
+https://github.com/Goldinium/The_Next_Web_replica.git
 
-### Run tests
-
-### Deployment
-
-
+- Or just download the repository zip
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+👤 **Goldinium**
+- GitHub: [@Goldinium](https://github.com/Goldinium)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Goldinium/NewsWeek_Replica/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
