@@ -20,11 +20,11 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone using SSH:
 
-git@github.com:Goldinium/The_Next_Web_replica.git
+git@github.com:Goldinium/NewsWeek_Replica.git
 
 - Clone using HTTPS:
 
-https://github.com/Goldinium/The_Next_Web_replica.git
+https://github.com/Goldinium/NewsWeek_Replica.git
 
 - Or just download the repository zip
 
