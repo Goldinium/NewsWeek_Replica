@@ -9,11 +9,16 @@ header a {
 }
 
 .nav-cat {
-  background-color: black;
+  background-color: white;
 }
 
 .email_footer_radiant {
   height: 250px;
   width: 300px;
   background-image: radial-gradient(circle at top right, yellow, #f06d06);
+}
+
+.subscribe {
+  background-color: #FFE400;
+  height: 20;
 }
