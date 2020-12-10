@@ -2,7 +2,7 @@
 
 # Replication of "NewsWeek"
 
-> This project has been built by a sleep deprived developer! and it's his first time ion using Bootstrap! he apreciate your understanding of his current cirmucstances.
+> This project has been built by a sleep deprived developer! and it's his first time in using Bootstrap! he apreciate your understanding of his current cirmucstances.
 
 > A replication of the index webpage.
 
