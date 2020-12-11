@@ -26,10 +26,12 @@ header a {
   .big_screen {
     display: none;
   }
+
   .small_screen {
     height: 75px;
     background-color: #f72210;
   }
+
   .icons_small {
     margin-right: 5px;
   }
@@ -38,6 +40,5 @@ header a {
 @media screen and (min-width: 769px) {
   .small_screen {
     display: none;
-
   }
 }
