@@ -11,9 +11,9 @@
 </head>
 <body>
 <div class="container-fluid container-xl container-lg container-md container-sm ">
+  <div class="big_screen">
       <div class="d-flex text-white header-color flex-row align-self-stretch justify-content-around justify-content-between">
           <a href="#" class="text-white text-decoration-none font-weight-bold">
-            
               <div class="weather mt-4">
                   <i class="fas fa-cloud-moon"></i>
                   15° Tangier, MA <i class="fas fa-chevron-right"></i><br><br>
@@ -23,10 +23,23 @@
                     <h1 class="display-2">NEWSWEEK</h1>
                 </a>
                 <div class="mt-4">
-                <span class="text-decoration-none align-items-lg-baseline"><a href="#" class="text-white">LOGIN</a></span>
+                <span class="text-decoration-none align-items-lg-baseline font-weight-bold"><a href="#" class="text-white">LOGIN</a></span>
                 <a href="#" class="subscribe btn align-items-lg-baseline">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
               </div>
+              </div>
             </div>
+            <div class="small_screen">
+            <div class="small_screen d-flex flex-row">
+            <a href="#" class="text-white text-decoration-none font-weight-bold">
+                <h2>NEWSWEEK</h2>
+            </a><br>
+            <div class="icons_small align-items-baseline mr-auto">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#" class="subscribe btn align-items-lg-baseline ">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
+            <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
             <nav class="nav-cat">
                 <ul class="d-flex nav font-weight-bold justify-content-around align-items-center">
                   <li class="nav-item">
@@ -63,7 +76,7 @@
                     <a href="#">Weather</a>
                   </li>
                   <li class="nav-item">
-                    <div class="input-group">
+                    <div class="input-group w-75">
                       <input type="text" class="form-control search"/>
                       <div class="input-group-append">
                         <i class="fas fa-search input-group-text"></i>
@@ -290,9 +303,9 @@
             <div class="d-flex align-items-center">
               <img src="images/subscribe.jpg" alt="image"/>
                 <h3 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
-                <p>All Access + Weekly Delivery. Choose A membership That's Perfect for You!</p><br>
-                <a href="#" class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></a>
-            </div>
+                <p>All Access + Weekly Delivery. Choose A membership That's Perfect for You!</p>
+            </div><br>
+            <a href="#" class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></a>
           </section>
           <section class="col">
             <header class="font-weight-bold mb-2">NEWSLETTER</header>
@@ -301,10 +314,10 @@
               <div class="mx-4">
                 <h3 class="font-weight-bold">The Starting 5</h3>
                 <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
-                <input type="text"  placeholder="Email address"/>
-                <div class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></div>
+                <input type="text" placeholder="Email address"/><br>
               </div>
-            </div>
+            </div><br>
+            <div class="font-weight-bold btn bg-danger">Subscribe <i class="fas fa-chevron-right"></i></div>
           </section>
         </div>
       </section>
@@ -380,7 +393,6 @@
           </ul>
         </nav>
       </footer>
-</main>
 </div>
 </body>
 </html>

@@ -21,3 +21,23 @@ header a {
 .subscribe {
   background-color: #ffe400;
 }
+
+@media screen and (max-width: 768px) {
+  .big_screen {
+    display: none;
+  }
+  .small_screen {
+    height: 75px;
+    background-color: #f72210;
+  }
+  .icons_small {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .small_screen {
+    display: none;
+
+  }
+}
