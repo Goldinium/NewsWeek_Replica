@@ -1,3 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .header-color {
   background-color: #f72210;
 }
@@ -10,12 +13,6 @@ header a {
 
 .nav-cat {
   background-color: white;
-}
-
-.email_footer_radiant {
-  height: 250px;
-  width: 300px;
-  background-image: radial-gradient(circle at top right, yellow, #f06d06);
 }
 
 .subscribe {
@@ -41,4 +38,8 @@ header a {
   .small_screen {
     display: none;
   }
+}
+
+.footer_colors {
+  color: #f72210;
 }
