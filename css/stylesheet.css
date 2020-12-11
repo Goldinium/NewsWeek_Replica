@@ -31,7 +31,10 @@ header a {
   }
 
   .icons_small {
-    margin-right: 5px;
+    padding:  20px 0 0 0;
+  }
+  .header_small_title {
+    padding:  28px 0 0 0;
   }
 }
 
@@ -43,4 +46,12 @@ header a {
 
 .footer_colors {
   color: #f72210;
+}
+
+.footer_colors_btn {
+  background-color: #f72210;
+}
+
+.main_background {
+  background-color: #f4f5f6;
 }
