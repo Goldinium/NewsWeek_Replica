@@ -12,6 +12,10 @@
 
 - HTML / CSS / Bootstrap
 
+## Bootstrap properties used
+
+- Flex & Grid.
+
 ## Live Demo
 
 [Live Demo Link](https://goldinium.github.io/NewsWeek_Replica/)
