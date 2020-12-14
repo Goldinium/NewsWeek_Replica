@@ -6,7 +6,7 @@
 
 > A replication of the index webpage.
 
-![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot22.png)
 
 ## Built With
 
