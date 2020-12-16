@@ -2,15 +2,13 @@
 
 # Replication of "NewsWeek"
 
-> This project has been built by a sleep deprived developer! and it's his first time in using Bootstrap! he apreciate your understanding of his current cirmucstances.
-
 > A replication of the index webpage.
 
 ![screenshot](./images/screenshot22.png)
 
 ## Built With
 
-- HTML / CSS / Bootstrap
+- HTML5 / CSS3 / Bootstrap 4
 
 ## Bootstrap properties used
 
