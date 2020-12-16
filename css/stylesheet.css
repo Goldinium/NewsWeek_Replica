@@ -48,7 +48,7 @@ header a {
   width: 25px;
   background-color: black;
   color: gray;
-  font-weight: bold; 
+  font-weight: bold;
   border-radius: 50%;
   font-size: 14px;
 }
@@ -127,7 +127,6 @@ header a {
 .footer_font {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .main_background {
   background-color: #fff;
