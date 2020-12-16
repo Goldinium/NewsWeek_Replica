@@ -1,723 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/3a95e71060.js" crossorigin="anonymous"></script>
-    <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/dejavu-serif" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
+
 <body>
-<div class="main">
-<div class="container-fluid container-xl container-lg container-md container-sm main_background">
-  <div class="big_screen container-xl container-lg ">
-      <div class="d-flex text-white header-color flex-row align-self-stretch justify-content-around justify-content-between w-100">
-          <a href="#" class="text-white text-decoration-none font-weight-bold">
-              <div class="weather mt-4">
-                  <i class="fas fa-cloud-moon"></i>
-                  15° Tangier, MA <i class="fas fa-chevron-right"></i><br><br>
-                  Tue, Dec 08, 2020
-                </div></a>
-                <div class="text-white text-decoration-none mt-2 mb-2">
-                <a href="#">
-                    <svg version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
-                </a></div>
-                <div class="mt-4">
-                <span class="text-decoration-none align-items-lg-baseline font-weight-bold mx-2"><a href="#" class="text-white">LOGIN</a></span>
-                <a href="#" class="subscribe btn align-items-lg-baseline rounded-pill">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
-              </div>
-              </div>
-            </div>
-            <div class="small_screen">
-            <div class="small_screen d-flex flex-row">
+  <div class="main">
+    <div class="container-fluid container-xl container-lg container-md container-sm main_background px-0">
+      <header>
+        <div class="big_screen container-xl container-lg px-0">
+          <div
+            class="d-flex text-white header-color flex-row align-self-stretch justify-content-around justify-content-between w-100">
             <a href="#" class="text-white text-decoration-none font-weight-bold">
-                <h2 class="header_small_title">NEWSWEEK</h2>
+              <div class="weather mt-4">
+                <i class="fas fa-cloud-moon"></i>
+                <span class="big_screen_header_font_3">15° Tangier, MA </span><i
+                  class="fas fa-chevron-right"></i><br><br>
+                Tue, Dec 08, 2020
+              </div>
+            </a>
+            <div class="text-white text-decoration-none mt-2 mb-2">
+              <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <div class="mt-4">
+              <span class="text-decoration-none font-weight-bold mx-2 big_screen_header_font_3"><a href="#"
+                  class="text-white">LOGIN</a></span>
+              <a href="#" class="subscribe btn rounded-pill big_screen_header_font_3">SUBSCRIBE <i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="small_screen">
+          <div class="small_screen d-flex flex-row">
+            <a href="#" class="text-white text-decoration-none font-weight-bold">
+              <h2 class="header_small_title">NEWSWEEK</h2>
             </a><br>
             <div class="icons_small align-items-baseline ml-auto">
-            <a href="#"><i class="fas fa-user mx-1"></i></a>
-            <a href="#" class="subscribe btn align-items-lg-baseline rounded-pill mx-1">SUBSCRIBE <i class="fas fa-chevron-right"></i></a>
-            <a href="#"><i class="fas fa-bars mx-1"></i></a>
+              <a href="#"><i class="fas fa-user mx-1"></i></a>
+              <a href="#" class="subscribe btn align-items-lg-baseline rounded-pill mx-1">SUBSCRIBE <i
+                  class="fas fa-chevron-right"></i></a>
+              <a href="#"><i class="fas fa-bars mx-1"></i></a>
             </div>
           </div>
         </div>
-            <nav class="nav-cat big_screen">
-                <ul class="d-flex nav font-weight-bold justify-content-around align-items-center mt-1">
-                  <li class="nav-item border-right ">
-                    <a href="#">U.S.</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Business</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">World</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Tech & Science</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Culture</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Newsgeek</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Sports</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Health</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">The Debate</a>
-                  </li>
-                  <li class="nav-item border-right mr-2 pr-2">
-                    <a href="#">Vantage</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#">Weather</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="input-group w-100">
-                      <input type="text" class="form-control search"/>
-                      <div class="input-group-append">
-                        <i class="fas fa-search input-group-text"></i>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
-              <nav class="mt-2 big_screen">
-                <ul class="nav">
-                  <li class="nav-item font-weight-bold mr-3 bg-warning">Trending</li>
-                  <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">JOE BIDEN</a></li>
-                  <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">DONALD TRUMP</a></li>
-                  <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">2020 Election</a></li>
-                  <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">CORONAVIRUS</a></li>
-                  <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">STIMULUS PACKAGE</a></li>
-                </ul>
-              </nav>
-    <div class="my-3 d-flex flex-column col-sm col-md">
+      </header>
+      <nav class="nav-cat big_screen big_screen_header_font">
+        <ul class="d-flex nav justify-content-around align-items-center mt-1">
+          <li class="nav-item border-right ">
+            <a href="#">U.S.</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Business</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">World</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Tech & Science</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Culture</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Newsgeek</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Sports</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Health</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">The Debate</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Vantage</a>
+          </li>
+          <li class="nav-item border-right mr-2 pr-2">
+            <a href="#">Weather</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <span>Search </span></a>
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mt-2 big_screen big_screen_header_font_2">
+        <ul class="nav">
+          <li class="nav-item font-weight-bold mr-3 bg-warning">Trending</li>
+          <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">JOE BIDEN</a></li>
+          <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">DONALD TRUMP</a></li>
+          <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">2020 Election</a></li>
+          <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">CORONAVIRUS</a></li>
+          <li class="nav-item font-weight-bold mr-3"><a href="#" class="text-muted">STIMULUS PACKAGE</a></li>
+        </ul>
+      </nav>
+      <div class="my-3 d-flex flex-column mr-2 ml-2">
         <div class="row">
-            <div class="col">
-                <div class="text-muted font-weight-bold">FEATURED STORY</div><br>
-                <article class="mb-2">
-                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
-                  <h3 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h3>
-                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
-                </article>
-                <article class="mb-2">
-                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
-                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
-                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
-                </article>
-                <article class="mb-2">
-                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
-                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
-                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
-                </article>
-                <article> class="mb-2"
-                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
-                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
-                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
-                </article>
-                <article class="mb-2">
-                    <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image"/>
-                  <h4 class="font-weight-bold"><a href="#">Republicans Rally Around Texas Election Suit as AGs Rail Against 'Circus'</a></h4>
-                  <p>Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts a "publicity stunt, not a serious legal pleading."</p>
-                </article>
-            </div>
-    <div class="col-12 col-lg-5 col-md-6 col-sm order-md-0 order-first d-flex flex-column">
-        <div class="text-muted font-weight-bold pb-2 mb-2">TOP STORY</div>
-        <article class="top-story">
-          <div class="thumbnail">
-            <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+          <div class="col col-md-6 col-lg-3 col-xl-4">
+            <div class="text-muted big_screen_header_font">FEATURED STORY</div><br>
+            <article class="mb-2">
+              <img class="w-100 mb-2" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image" />
+              <h3 class="font-weight-bold"><a href="#" class="featured__title">Republicans Rally Around Texas Election
+                  Suit as AGs Rail Against 'Circus'</a></h3>
+              <p class="featured__text mt-1">Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts
+                a "publicity stunt, not a serious legal pleading."</p>
+            </article>
+            <article class="mb-2">
+              <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image" />
+              <h3 class="font-weight-bold"><a href="#" class="featured__title">Republicans Rally Around Texas Election
+                  Suit as AGs Rail Against 'Circus'</a></h3>
+              <p class="featured__text  mt-1">Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts
+                a "publicity stunt, not a serious legal pleading."</p>
+            </article>
+            <article class="mb-2">
+              <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image" />
+              <h3 class="font-weight-bold"><a href="#" class="featured__title">Republicans Rally Around Texas Election
+                  Suit as AGs Rail Against 'Circus'</a></h3>
+              <p class="featured__text mt-1">Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts
+                a "publicity stunt, not a serious legal pleading."</p>
+            </article>
+            <article class="mb-2">
+              <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image" />
+              <h3 class="font-weight-bold"><a href="#" class="featured__title">Republicans Rally Around Texas Election
+                  Suit as AGs Rail Against 'Circus'</a></h3>
+              <p class="featured__text mt-1">Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts
+                a "publicity stunt, not a serious legal pleading."</p>
+            </article>
+            <article class="mb-2">
+              <img class="w-100" src="images/cul-map-holiday-food-tang-yuan.webp" alt="image" />
+              <h3 class="font-weight-bold"><a href="#" class="featured__title">Republicans Rally Around Texas Election
+                  Suit as AGs Rail Against 'Circus'</a></h3>
+              <p class="featured__text mt-1">Michigan Attorney General Dana Nessel, a Democrat, called Paxton's efforts
+                a "publicity stunt, not a serious legal pleading."</p>
+            </article>
           </div>
-          <h4 class="font-weight-bold"><a href="#">Trump Lost the Election but the U.S.-China Relationship Is Forever Changed</a></h4>
-          <p>Four years of chaotic relations with President Donald Trump will soon be over, but a Biden Administration does not mean an end to the simmering U.S.-China confrontation.</p>
-        </article>
-        <section>
-          <div class="text-muted font-weight-bold text-uppercase my-1 border-bottom mt-2">My Turn</div>
-          <div class="row mt-2">
-            <div class="col">
-              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
-              <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 23, I Had a Mini Stroke Days After Contracting COVID'</a></p>
-            </div>
-            <div class="col">
-              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
-              <p class="text-muted font-weight-bold compact py-2"><a href="#">'My Baby Had a Medical Emergency During COVID'</a></p>
-            </div>
-            <div class="col">
-              <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
-              <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 12. Next Year I'm Studying Aerospace Engineering at University'</a></p>
-            </div>
-          </div>
-        </section>
-        <section class="order-1 order-md-0">
-          <div class="text-muted font-weight-bold text-uppercase my-1 border-bottom">Culture & Travel</div>
-          <div class="row mt-2">
-            <div class="col">
+          <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 order-md-0 order-first">
+            <div class="text-muted pb-2 mb-2 big_screen_header_font">TOP STORY</div>
+            <article class="top-story">
               <div class="thumbnail">
-                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
+                <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
               </div>
-              <p class="text-muted font-weight-bold py-2"><a href="#">Is Car Glamping the More Accessible Alternative to Van Life?</a></p>
-            </div>
-            <div class="col">
-              <div class="thumbnail">
-                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
-              </div>
-              <p class="text-muted font-weight-bold py-2"><a href="#">These Countries Are the Most Dependent on Tourism</a></p>
-            </div>
-            <div class="col">
-              <div class="thumbnail">
-                <img class="w-100" src="images/suv-micro-rv.webp" alt="image"/>
-              </div>
-              <p class="text-muted font-weight-bold py-2"><a href="#">100 Best Rock Albums of All Time</a></p>
-            </div>
-          </div>
-        </section>
-        <div class="col mt-3">
-          <section>
-              <div class="text-muted font-weight-bold">MORE STORIES</div>
-              <article class="row border-bottom mb-3 media mt-3 pb-3">
-                <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
-                <div class="mx-2 media-body">
-                  <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
-                  <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+              <h4 class="featured__title"><a href="#">Trump Lost the Election but the U.S.-China Relationship Is Forever
+                  Changed</a></h4>
+              <p class="featured__text">Four years of chaotic relations with President Donald Trump will soon be over,
+                but a Biden Administration does not mean an end to the simmering U.S.-China confrontation.</p>
+            </article>
+            <section>
+              <div class="text-muted big_screen_header_font text-uppercase my-1 border-bottom mt-3">My Turn</div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 23, I Had a Mini Stroke Days
+                      After Contracting COVID'</a></p>
                 </div>
-              </article>
-              <article class="row border-bottom mb-3 media">
-                <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
-                <div class="mx-2 media-body">
-                    <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
-                  <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+                <div class="col">
+                  <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  <p class="text-muted font-weight-bold compact py-2"><a href="#">'My Baby Had a Medical Emergency
+                      During COVID'</a></p>
                 </div>
-              </article>
-              <article class="row border-bottom mb-3 media">
-                <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
-                <div class="mx-2 media-body">
-                    <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
-                  <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
-                <br></div>
-              </article>
-              <article class="row border-bottom mb-3 media">
-                <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image"/>
-                <div class="mx-2 media-body">
-                    <p class="text-dark font-weight-bold"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</a></p>
-                  <p>The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
-                <br></div>
-              </article>
+                <div class="col">
+                  <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  <p class="text-muted font-weight-bold compact py-2"><a href="#">'I'm 12. Next Year I'm Studying
+                      Aerospace Engineering at University'</a></p>
+                </div>
+              </div>
+            </section>
+            <section class="order-1 order-md-0">
+              <div class="text-muted text-uppercase my-1 border-bottom big_screen_header_font">Culture & Travel</div>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="thumbnail">
+                    <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  </div>
+                  <p class="text-muted font-weight-bold py-2"><a href="#">Is Car Glamping the More Accessible
+                      Alternative to Van Life?</a></p>
+                </div>
+                <div class="col">
+                  <div class="thumbnail">
+                    <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  </div>
+                  <p class="text-muted font-weight-bold py-2"><a href="#">These Countries Are the Most Dependent on
+                      Tourism</a></p>
+                </div>
+                <div class="col">
+                  <div class="thumbnail">
+                    <img class="w-100" src="images/suv-micro-rv.webp" alt="image" />
+                  </div>
+                  <p class="text-muted font-weight-bold py-2"><a href="#">100 Best Rock Albums of All Time</a></p>
+                </div>
+              </div>
+            </section>
+            <div class="col mt-3">
+              <section>
+                <div class="text-muted big_screen_header_font">MORE STORIES</div>
+                <article class="row border-bottom mb-3 media mt-3 pb-3">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image" />
+                  <div class="mx-2 media-body">
+                    <p class="text-dark featured__title"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator
+                        in 2022: Poll</a></p>
+                    <p class="featured__text">The poll, which was conducted by the BUSR/UNLV Lee Business School, found
+                      24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's
+                      Republican Senate primary election.</p>
+                  </div>
+                </article>
+                <article class="row border-bottom mb-3 media">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image" />
+                  <div class="mx-2 media-body">
+                    <p class="text-dark featured__title"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator
+                        in 2022: Poll</a></p>
+                    <p class="featured__text">The poll, which was conducted by the BUSR/UNLV Lee Business School, found
+                      24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's
+                      Republican Senate primary election.</p>
+                  </div>
+                </article>
+                <article class="row border-bottom mb-3 media">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image" />
+                  <div class="mx-2 media-body">
+                    <p class="text-dark featured__title"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator
+                        in 2022: Poll</a></p>
+                    <p class="featured__text">The poll, which was conducted by the BUSR/UNLV Lee Business School, found
+                      24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's
+                      Republican Senate primary election.</p> <br>
+                  </div>
+                </article>
+                <article class="row border-bottom mb-3 media">
+                  <img src="images/100-best-rock-albums-all-time.webp" height="120" width="120" alt="image" />
+                  <div class="mx-2 media-body">
+                    <p class="text-dark featured__title"><a href="#">Lara Trump Top Pick to Succeed Retiring GOP Senator
+                        in 2022: Poll</a></p>
+                    <p class="featured__text">The poll, which was conducted by the BUSR/UNLV Lee Business School, found
+                      24 percent of respondents in North Carolina supporting Trump, if she decides to run in the state's
+                      Republican Senate primary election.</p> <br>
+                  </div>
+                </article>
               </section>
+            </div>
+          </div>
+          <div class="col col-md-0 col-sm-10 col-lg-3 col-xl-4">
+            <div class="bg-white p-3 mt-4 d-flex flex-column">
+              <span class="d-block text-uppercase big_screen_header_font mb-2 text-muted sticky-top">the debate</span>
+              <div class="debate-card position-relative">
+                <div class="d-flex align-items-center pt-3 pb-1">
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&h=63&f=3de733b09b3c97b87933e4368ae4e559"
+                      alt="image" />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="font-weight-bold">Should this project get approved? Yes</a>
+                    <p class="text-uppercase text-muted">
+                      By
+                      <a href="#" class="text-secondary font-weight-bold">Goldinium</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="debate-vs d-flex justify-content-center align-items-center">
+                  <span class="font-weight-bold">VS</span>
+                </div>
+                <div class="debate-hr"></div>
+                <div class="d-flex align-items-center pt-1 pb-3 justify-content-between">
+                  <div class="mr-3">
+                    <a href="#" class="ont-weight-bold">Should this project approved? Not Yet</a>
+                    <p class="text-uppercase text-muted ">
+                      By
+                      <span class="text-secondary font-weight-bold">TSE</span>
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&h=63&f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex flex-column">
+                <section>
+                  <div class="mb-1 text-muted big_screen_header_font">OPINION</div>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a><span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By
+                        sleep deprived -_-</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                  <article class="card border-top-0 border-left-0 border-right-0 py-2">
+                    <div class="row mt2">
+                      <div>
+                        <img src="images/john-yoo.webp" alt="image" />
+                      </div>
+                      <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick
+                        & Morty</span>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="bg-white p-3 mt-4 mt-md-0 border-bottom col-12 col-lg-3 d-flex flex-column col-sm col-md">
-          <div class="">
-            <span
-              class="d-block text-uppercase font-weight-bold mb-2 text-muted sticky-top">the debate</span>
-            <div class="debate-card position-relative">
-              <div class="d-flex align-items-center pt-3 pb-1">
-                <div>
-                  <img
-                    src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&h=63&f=3de733b09b3c97b87933e4368ae4e559" alt="image"/>
-                </div>
-                <div class="ml-3">
-                  <a href="#" class="font-weight-bold">Should this project get approved? Yes</a>
-                  <p class="text-uppercase text-muted">
-                    By
-                    <a href="#" class="text-secondary font-weight-bold">Goldinium</a>
-                  </p>
-                </div>
-              </div>
-              <span class="font-weight-bold">VS</span>
-              <div
-                class="d-flex align-items-center pt-1 pb-3 justify-content-between">
-                <div class="mr-3">
-                  <a href="#" class="ont-weight-bold">Should this project approved? Not Yet</a>
-                  <p class="text-uppercase text-muted ">
-                    By
-                    <span class="text-secondary font-weight-bold">TSE</span>
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&h=63&f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
-                    alt=""
-                  />
-                </div>
-              </div>
+      </div>
+      <h2 class="mt-5 big_screen_header_font text-center"><img src="images/red_overlay.png" alt="image"> IN THE MAGAZINE
+      </h2>
+      <div class="border-bottom mb-3"></div>
+      <div class="row">
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/usa.webp" alt="image" />
             </div>
-    <div class="col font-weight-bold d-flex flex-column col-sm col-md">
-        <section>
-          <div class="mb-1 text-muted font-weight-bold">OPINION</div>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a><span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By sleep deprived -_-</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
-          <article class="card border-top-0 border-left-0 border-right-0 py-2">
-            <div class="row mt2">
-              <div>
-                <img src="images/john-yoo.webp" alt="image"/>
-              </div>
-                  <a href="#">Why is the NDAA Trying to Keep Us in Afghanistan?</a> <span class="text-muted">By Rick & Morty</span>
-            </div>
-          </article>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
           </section>
-          </div>
-    </div>
-    </div>
-    </div>
-    <h2 class="mt-5 font-weight-bold text-center"><img src="images/red_overlay.png" alt="image"> IN THE MAGAZINE</h2>
-    <div class="border-bottom mb-3"></div>
-    <div class="row">
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/usa.webp" alt="image"/>
-                  </div>
-                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-        </section>
-        </div>
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/usa.webp" alt="image"/>
-                  </div>
-                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-        </section>
-        </div>
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/usa.webp" alt="image"/>
-                  </div>
-                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-        </section>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/selena.webp" alt="image"/>
-                  </div>
-                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-        </section>
         </div>
         <div class="col">
           <section>
-              <div class="thumbnail">
-                  <img class="w-100" src="images/selena.webp" alt="image"/>
-                </div>
-                <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-      </section>
-      </div>
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/selena.webp" alt="image"/>
-                  </div>
-                  <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
-        </section>
-        </div>
-        </div>
-        <h2 class="mt-5 font-weight-bold text-center"><img src="images/red_overlay.png" alt="image"> EDITOR'S PICK</h2>
-    <div class="border-bottom mb-3 pb-3"></div>
-    <div class="row">
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                  </div>
-                  <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-        </section>
-        </div>
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                  </div>
-                  <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-        </section>
-        </div>
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                  </div>
-                  <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-        </section>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                  </div>
-                  <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-        </section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/usa.webp" alt="image" />
+            </div>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+          </section>
         </div>
         <div class="col">
           <section>
-              <div class="thumbnail">
-                  <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                </div>
-                <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-      </section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/usa.webp" alt="image" />
+            </div>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+          </section>
+        </div>
       </div>
+      <div class="row mb-3 mt-2">
         <div class="col">
-            <section>
-                <div class="thumbnail">
-                    <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image"/>
-                  </div>
-                  <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
-        </section>
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/selena.webp" alt="image" />
+            </div>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+          </section>
         </div>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/selena.webp" alt="image" />
+            </div>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+          </section>
         </div>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">U.S.</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/selena.webp" alt="image" />
             </div>
-          </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">WORLD</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+            <a href="#">Understanding the Iwo Jima Memorial's Power and Whether to Topple Monuments</a>
+          </section>
+        </div>
+      </div>
+      <h2 class="mt-5 big_screen_header_font text-center"><img src="images/red_overlay.png" alt="image"> EDITOR'S PICK
+      </h2>
+      <div class="border-bottom mb-3 pb-3"></div>
+      <div class="row">
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
             </div>
-          </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">BUSINESS</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
             </div>
-          </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">TECH & SCIENCE</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
             </div>
-          </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">CULTURE</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
             </div>
-          </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3">
-          <h5 class="font-weight-bold text-nw-red mb-2 footer_colors">SPORTS</h5>
-          <div class="row">
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <article class="col-12 col-md-4">
-              <img class="w-100" src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d" alt="image"/>
-              <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This Year</h4>
-            </article>
-            <div class="d-flex flex-column col-12 col-md-4">
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least Popular Dog Breeds in America This Year</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2" alt="image"/>
-                <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
-              </article>
-              <article class="d-flex align-items-start article-small border-bottom py-3">
-                <img style="width: 33%" src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70" alt="image"/>
-                <h5 class="mx-2">
-                  <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead of 800-Foot Asteroid's Close Approach</a>
-                </h5>
-              </article>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
             </div>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+        <div class="col">
+          <section>
+            <div class="thumbnail">
+              <img class="w-100" src="images/person-typing-backlit-keyboard.webp" alt="image" />
+            </div>
+            <a href="#">The 10 Best Moves to Make with Your Money Before 2020 Ends</a>
+          </section>
+        </div>
+      </div>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">U.S.</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
           </div>
-        </section>
-        <section class="mx-3 border-top border-bottom py-3 d-flex">
-          <div class="row">
-            <section class="col">
-              <header class="text-uppercase font-weight-bold mb-1 footer_colors">Subscribe</header>
-              <div class="d-flex flex-column align-items-center p-4 bg-light">
-                <img class="h-100" src="images/subscribe.jpg" alt="image"/>
-                <div class="mx-5">
-                  <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
-                  <p>All Access + Weekly Delivery. Choose A membership That's Perfect for You!</p>
-                  <a href="#" class="footer_colors_btn btn align-items-lg-baseline mt-1">Subscribe <i class="fas fa-chevron-right"></i></a>
-                </div>
+        </div>
+      </section>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">WORLD</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">BUSINESS</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">TECH & SCIENCE</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">CULTURE</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mx-3 border-top border-bottom py-3">
+        <h5 class="big_screen_header_font text-nw-red mb-2 footer_colors">SPORTS</h5>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1656513/best-smart-home-gifts-2020-serena.webp?w=397&h=265&f=9d498b183c3a2b94f2de963025811c2d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <article class="col-12 col-md-4">
+            <img class="w-100"
+              src="https://d.newsweek.com/en/full/1668929/snake-hose.webp?w=397&h=265&f=526843215b7f9318da2e91256961ef4d"
+              alt="image" />
+            <h4 class="my-2 font-weight-bold text-capitalize">These Are the Least Popular Dog Breeds in America This
+              Year</h4>
+          </article>
+          <div class="d-flex flex-column col-12 col-md-4">
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668915/amazon-ring-doorbell-maryland-august-2019.webp?w=397&h=265&f=a455e8d258dc6184c0627abac9f9017c"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">These Are the Least
+                  Popular Dog Breeds in America This Year</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1669007/whale-explosion.webp?w=95&h=95&f=c2efdac9274e73214913bf235b0b17f2"
+                alt="image" />
+              <h5 class="mx-2"><a href="#" class="font-weight-bold text-decoration-none text-dark">Watch Remastered
+                  Footage of Oregon Whale Exploding 50 Years After the Event</a></h5>
+            </article>
+            <article class="d-flex align-items-start article-small border-bottom py-3">
+              <img style="width: 33%"
+                src="https://d.newsweek.com/en/full/1668868/asteroid.webp?w=95&h=95&f=4bc4f94e7ef361366e847f7d3a515f70"
+                alt="image" />
+              <h5 class="mx-2">
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">Meteor Shower to Peak Tonight Ahead
+                  of 800-Foot Asteroid's Close Approach</a>
+              </h5>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="mx-3 border-top border-bottom py-3 d-flex flex-column mr-2 ml-2">
+        <div class="row d-flex flex-lg-row">
+          <div class="col-6 footer_news_letter">
+            <span class="text-uppercase big_screen_header_font mb-1 footer_colors">Subscribe</span>
+            <div class="footer_news_letter d-flex align-items-center">
+              <div>
+                <img src="images/subscribe.jpg" alt="image" />
               </div>
-            </section>
-            <section class="col">
-              <span class="text-uppercase font-weight-bold mb-1 footer_colors">Newsletter</span>
-              <div class="d-flex align-items-center bg-light flex-1 flex-column">
-                <img class="cover h-100" width="191" src="images/newsletter.png" alt="image"/>
-                <div class="mx-4">
-                  <h4 class="font-weight-bold">The Starting 5</h4>
-                  <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
-                  <input type="text" class="form-control my-1" placeholder="Email address" aria-label="Email address"/>
-                  <a href="#" class="footer_colors_btn btn align-items-lg-baseline">FREE Sign Up <i class="fas fa-chevron-right"></i></a>
-                </div>
+              <div class="ml-2"><span class="footer_big_text">In-depth Stories You Don't See Elsewhere About Topics You
+                  Want to Read!</span>
+                <p>All Access + Weekly Delivery. Choose A membership That's Perfect for You!</p>
+                <a href="#" class="footer_colors_btn btn align-items-lg-baseline mt-1">Subscribe <i
+                    class="fas fa-chevron-right"></i></a>
               </div>
-            </section>
+            </div>
           </div>
-        </section>
-      <footer class="d-flex flex-column col-sm col-md">
-        <section class="border-bottom justify-content-between row mt-2 mb-2">
-          <svg
-                  class="currentColor"
-                  version="1.1"
-                  width="236"
-                  height="36"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 396 60"
-                  style="enable-background: new 0 0 395.6 60"
-                  xml:space="preserve">
-                  <g>
-                    <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
-                  </g>
-                </svg>
-            <small class="font-weight-light mx-2">© 2020 NEWSWEEK DIGITAL LLC </small>
-            <div class="ml-auto row">
+            <div class="col-6 footer_news_letter pb-2">
+              <span class="text-uppercase big_screen_header_font footer_colors">Newsletter</span>
+              <div class="d-flex align-items-center">
+              <div><img src="images/newsletter.png" width="100%" alt="image" />
+              </div>
+              <div class="ml-2"><span class="footer_big_text">The Starting 5</span>
+                <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                <input type="text" placeholder="Email address" /><br>
+                <a href="#" class="footer_colors_btn btn align-items-lg-baseline">FREE Sign Up <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+            </div>
+        </div>
+        <footer class="d-flex flex-column mr-2 ml-2">
+          <div class="border-bottom justify-content-between row mt-2 mb-2">
+            <div class="col-10">
+              <img src="images/logo2.png">
+              <small class="font-weight-light mr-2">© 2020 NEWSWEEK DIGITAL LLC</small>
+            </div>
+            <div class="mr-0 col-2">
               <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
               <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
               <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
               <a href="#"><i class="fab fa-tumblr-square fa-2x"></i></a>
               <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
-        </section>
-        <nav class="my-2">
-          <ul class="nav">
-            <li>
-                <a href="#" class="text-wheight-bold border-right mr-2 pr-2 text-dark">Editions</a>
-              </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">U.S. Edition</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">日本</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Pakistan</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Polska</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark">România</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="my-2 mt-3">
-          <ul class="nav">
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Corrections</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Contact Us</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Editorial Guidelines</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Advertise</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Copyright</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Cookie Policy</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Terms of Sale</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Archive</a>
-            </li>
-            <li>
-              <a href="#" class="border-right mr-2 pr-2 text-dark">Announcements</a>
-            </li>
-          </ul>
-        </nav>
+          </div>
+      </div>
+      <nav class="my-2">
+        <ul class="nav">
+          <li>
+            <a href="#" class="text-wheight-bold border-right mr-2 pr-2 text-dark">Editions</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">U.S. Edition</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">日本</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Pakistan</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Polska</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark">România</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="my-2 mt-3">
+        <ul class="nav">
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Corrections</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Editorial Guidelines</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Advertise</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Copyright</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Cookie Policy</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Terms of Sale</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Archive</a>
+          </li>
+          <li>
+            <a href="#" class="border-right mr-2 pr-2 text-dark">Announcements</a>
+          </li>
+        </ul>
+      </nav>
       </footer>
-</div>
-</div>
-</div>
+    </div>
+  </div>
 </body>
+
 </html>
