@@ -11,8 +11,14 @@ a {
 }
 
 .featured__title {
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 0;
+  font-weight: bold;
+}
+
+.featured__title_2 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .featured__text {
@@ -41,10 +47,10 @@ header a {
   height: 25px;
   width: 25px;
   background-color: black;
-  color: white;
-  font-weight: bold;
+  color: gray;
+  font-weight: bold; 
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .debate-hr {
@@ -54,24 +60,35 @@ header a {
   border-bottom: 1px solid rgb(216, 216, 216);
 }
 
-.big_screen_header_font_3 {
-  font-weight: 700;
+.header_hr {
+  width: 100%;
+  height: 6px;
+  border-top: 4px solid rgb(216, 216, 216);
+  border-bottom: 4px solid rgb(216, 216, 216);
 }
 
 .big_screen_header_font {
   font-size: 18px;
-  font-weight: 700;
-  font-family: 'DejaVuSerif', serif;
+  font-weight: 500;
 }
 
 .big_screen_header_font_2 {
   font-size: 18px;
-  font-weight: 500;
-  font-family: 'DejaVuSerif', serif;
+  font-weight: 700;
+}
+
+.big_screen_header_font_3 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .subscribe {
   background-color: #ffe400;
+  font-weight: bold;
+}
+
+.text-weight-bold {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,6 +123,11 @@ header a {
 .footer_colors_btn {
   background-color: #f72210;
 }
+
+.footer_font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .main_background {
   background-color: #fff;
