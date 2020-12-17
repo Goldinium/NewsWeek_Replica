@@ -21,6 +21,11 @@ a {
   font-weight: bold;
 }
 
+.featured__title_3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .featured__text {
   font-size: 13px;
 }
