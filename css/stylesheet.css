@@ -111,7 +111,6 @@ header a {
   .footer_small {
     display: flex;
     flex-direction: column;
-    background-color: black;
   }
 }
 
