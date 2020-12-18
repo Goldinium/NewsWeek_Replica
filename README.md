@@ -4,7 +4,7 @@
 
 > A replication of the index webpage.
 
-![screenshot](./images/screenshot22.png)
+![screenshot](./images/screenshot3.png)
 
 ## Built With
 
@@ -12,7 +12,7 @@
 
 ## Bootstrap properties used
 
-- Flex & Grid.
+- Flex, Grid & Sticky.
 
 ## Live Demo
 
