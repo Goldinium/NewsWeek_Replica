@@ -12,7 +12,7 @@
 
 ## Bootstrap properties used
 
-- Flex & Grid.
+- Flex, Grid & Sticky.
 
 ## Live Demo
 
