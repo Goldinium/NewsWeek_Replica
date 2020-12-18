@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header-color {
@@ -11,13 +11,13 @@ a {
 }
 
 .featured__title {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 0;
   font-weight: bold;
 }
 
 .featured__title_2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -30,10 +30,20 @@ a {
   font-size: 13px;
 }
 
+.cats_text {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 header a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.bold_text {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .nav-cat {
@@ -49,13 +59,13 @@ header a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-color: #000;
-  color: gray;
-  font-weight: bold;
+  color: #d6d6d6;
+  font-weight: 700;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .debate-hr {
@@ -67,9 +77,16 @@ header a {
 
 .header_hr {
   width: 100%;
-  height: 6px;
-  border-top: 4px solid rgb(216, 216, 216);
-  border-bottom: 4px solid rgb(216, 216, 216);
+  height: 9px;
+  border-top: 5px solid rgb(216, 216, 216);
+  border-bottom: 5px solid rgb(216, 216, 216);
+}
+
+.debate_hr {
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid rgb(216, 216, 216);
+  border-bottom: 2px solid rgb(216, 216, 216);
 }
 
 .big_screen_header_font {
@@ -96,6 +113,43 @@ header a {
   font-weight: bold;
 }
 
+.red_overlay {
+  display: inline;
+}
+
+.cat_image_inside_container {
+  position: relative;
+}
+
+.cat_image_inside_texture {
+  position: absolute;
+  background-color: #e7e6e6;
+  color: #f72210;
+  padding: 0px 20px 0px 20px;
+  bottom: 2px;
+  left: 0px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.show_first {
+  z-index: 1;
+}
+
+.footer_image_positioning_container {
+  position: relative;
+}
+
+.footer_image_relatives {
+  position: relative;
+}
+
+.footer_image_absolute {
+  position: absolute;
+  left: 75px;
+  top: 25px;
+}
+
 @media screen and (max-width: 768px) {
   .big_screen {
     display: none;
@@ -114,11 +168,16 @@ header a {
     padding: 28px 0 0 0;
   }
 
+  .margin_footer {
+    margin: auto;
+  }
+
   .footer_small {
     display: flex;
     flex-direction: column;
   }
 }
+
 
 @media screen and (min-width: 769px) {
   .small_screen {
@@ -128,6 +187,10 @@ header a {
 
 .footer_colors {
   color: #f72210;
+}
+
+.margin_footer {
+  margin-left: 90px;
 }
 
 .footer_colors_btn {
@@ -153,4 +216,8 @@ header a {
 .footer_big_text {
   font-weight: 1000;
   font-size: 22px;
+}
+
+.cover {
+  object-fit: fill;
 }
