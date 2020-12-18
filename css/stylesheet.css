@@ -178,7 +178,6 @@ header a {
   }
 }
 
-
 @media screen and (min-width: 769px) {
   .small_screen {
     display: none;
