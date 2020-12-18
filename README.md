@@ -11,7 +11,9 @@
 - HTML5 / CSS3 / Bootstrap 4
 
 ## Bootstrap properties used
+ with the next projects.
 
+Eyüp Sercan UYGUR
 - Flex, Grid & Sticky.
 
 ## Live Demo
@@ -44,3 +46,9 @@ Feel free to check the [issues page](https://github.com/Goldinium/NewsWeek_Repli
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
+
+
