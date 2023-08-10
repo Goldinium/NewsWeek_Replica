@@ -11,9 +11,7 @@
 - HTML5 / CSS3 / Bootstrap 4
 
 ## Bootstrap properties used
- with the next projects.
 
-Eyüp Sercan UYGUR
 - Flex, Grid & Sticky.
 
 ## Live Demo
