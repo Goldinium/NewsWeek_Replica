@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://badrbenslama.github.io/NewsWeek_Replica/)
+[Live Demo Link](https://Goldinium.github.io/NewsWeek_Replica/)
 
 To get a local copy up and running follow these simple example steps.
 
@@ -32,14 +32,14 @@ https://github.com/badrbenslama/NewsWeek_Replica.git
 
 ## Authors
 
-👤 **badrbenslama**
-- GitHub: [@badrbenslama](https://github.com/badrbenslama)
+👤 **Goldinium**
+- GitHub: [@Goldinium](https://github.com/Goldinium)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/badrbenslama/NewsWeek_Replica/issues).
+Feel free to check the [issues page](https://github.com/Goldinium/NewsWeek_Replica/issues).
 
 ## Show your support
 
